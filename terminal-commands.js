@@ -11,9 +11,19 @@ module.exports.ls = () => {
 };
 
 module.exports.touch = () => {
-  // your code here
+  fs.writeFile('afile.txt','My name is adam', (err) => {
+      if (err) {
+          return `Error: ${err}`;
+      }
+      console.log('File has been created');
+  })
 };
 
 module.exports.mkdir = () => {
-  // your code here
+  fs.mkdir('afolder',(err) => {
+      if (err) {
+          return `Error: ${err}`;
+      }
+      console.log('Folder has been created');
+  })
 };
