@@ -1,5 +1,5 @@
 const terminalCommands = require('./terminal-commands');
 
 terminalCommands.ls();
-terminalCommands.touch();
-terminalCommands.mkdir();
+terminalCommands.touch('aFile.txt', 'I am your creator');
+terminalCommands.mkdir('aFolder');
